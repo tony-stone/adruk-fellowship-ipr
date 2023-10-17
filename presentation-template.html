@@ -338,7 +338,7 @@ Tony Stone
 
   <p class="date">19 Oct 2023</p>
 </section>
-<section id="the-basics" class="slide level2">
+<section id="the-basics" class="slide level2 smaller">
 <h2>The basics</h2>
 <ul>
 <li>Title: Variation In provision of Education support to Survivors of childhood cancer and Their Attainment (VIESTA)</li>
@@ -394,8 +394,89 @@ Tony Stone
 <li>Identify school-level characteristics associated with reduced attainment differences</li>
 </ul>
 </section>
-<section id="experimental-approach" class="slide level2">
-<h2>Experimental approach</h2>
+<section id="experimental-approach-1" class="slide level2">
+<h2>Experimental approach 1/</h2>
+<ul>
+<li>Data source: ECHILD research database</li>
+<li>Co-produced with Teenage Cancer Trust Youth Advisory group
+<ul>
+<li>Variable selection</li>
+<li>Interpretation of results</li>
+<li>Dissemination</li>
+</ul></li>
+</ul>
+</section>
+<section id="experimental-approach-2" class="slide level2">
+<h2>Experimental approach 2/</h2>
+<ul>
+<li>Population:
+<ol type="1">
+<li>all children enrolled in state-funded schools in England at any time in the period 2014 to 2022
+<ol type="1">
+<li>5+ years school attendance records preceding KS2/4 outcome</li>
+<li>a birth record and complete school attendance record</li>
+</ol></li>
+<li>Siblings cohort: Use the subgroup of 1.2, those with an identified siblings (sharing the same biological mother)</li>
+</ol></li>
+<li>Exposure:
+<ol type="1">
+<li>Diagnosis of any cancer prior to KS2/4 outcome</li>
+<li>Prior to KS2/4 outcome, having a child sibling (0-16years) diagnosed with any cancer</li>
+</ol></li>
+</ul>
+</section>
+<section id="experimental-approach-3" class="slide level2">
+<h2>Experimental approach 3/</h2>
+<ul>
+<li>Comparison:
+<ol type="1">
+<li>Peers (defined as those with similar baseline characteristics, such as cohort, age, gender, ethnicity and small geography based deprivation) with no previous diagnosis of cancer</li>
+<li>Peers with no previous diagnosis of cancer, and with a child or adolescent (aged 0-16years) sibling (sharing the same mother) with no previous diagnosis of cancer.</li>
+</ol></li>
+</ul>
+</section>
+<section id="experimental-approach-4" class="slide level2">
+<h2>Experimental approach 4/</h2>
+<ul>
+<li>Outcomes:
+<ul>
+<li>Meeting the expected standard in Key Stage (KS) 2 reading, writing and maths (binary)</li>
+<li>Number of KS4 [GCSE] passes at grade A* to C (count)</li>
+<li>Receipt of special educational needs and disabilities support (binary) - repeated for all years for which data are available</li>
+<li>Number of days absent (count) - repeated for all years for which data are available</li>
+<li>Post-16 outcomes such as:
+<ul>
+<li>continuing education into KS5</li>
+<li>total points achieved from best three results at KS5 [A-level].</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="experimental-approach-5" class="slide level2">
+<h2>Experimental approach 5/</h2>
+<ul>
+<li>Prognostic variables prospectively identified by review of literature (previous studies: age, gender, FSM, SEND, EAL).</li>
+<li>DAG representations of causal relationships to inform the development of regression models.</li>
+<li>crude outcomes for both exposure groups</li>
+<li>doubly robust methods to adjust for (measured) baseline confounders (augmented inverse propensity weighted estimators)</li>
+</ul>
+<aside class="notes">
+<p>This combines a regression adjustment (RA) model (i.e., a regression model conditional on suitable covariates) with inverse propensity weighting (IPW) to obtain an unbiased exposure effect estimator provided either or both the RA and IPW models are correctly specified​.</p>
+<p>For Outcomes 1 (KS2 expected standard met), the RA model will be a binary logistic model yielding an odds ratio describing the association of the outcome and exposure. For Outcome 2 (KS4 count of A*-C passes), the RA model will likely be a negative binomial model yielding an incident rate ratio describing the association of the outcome and exposure.</p>
+<p>Due to the repeated measurements in Outcomes 3 &amp; 4 (repeated each year for which data are available per pupil), I will use doubly robust Generalised Estimating Equation (GEE) methods to allow for the within-pupil correlation</p>
+<p>For the sub-cohorts for which both KS2 and KS4 outcomes are present, I will investigate fitting models estimating Outcome 2 (KS4 attainment) conditional on KS2 outcome, in addition to identified covariates.</p>
+<p>RQ3: I will use generalised linear mixed (multi-level) models to investigate how much of the variation in outcomes (for Outcome 1 &amp; 2, KS2/4 attainment) between exposure groups is explained by observations being clustered within schools and the school-level characteristics. It is the likely the data will be relatively sparse (few pupils per school) for this analysis, if so, Bayesian mixed modelling approaches will be investigated.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="fit-with-call" class="slide level2">
 <h2>Fit with call</h2>
