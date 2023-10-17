@@ -9,7 +9,7 @@ format:
     theme: solarized
 ---
 
-## The basics
+## The basics {.smaller}
 
 * Title: Variation In provision of Education support to Survivors of childhood cancer and Their Attainment (VIESTA) 
 * Applicant: Tony Stone, CHIG, Clinical Epidemiology, Nutrition and Biostatistics, PPP, UCL GOSH ICH
@@ -49,9 +49,72 @@ format:
 * Quantify impact of childhood cancer on academic attainment of siblings
 * Identify school-level characteristics associated with reduced attainment differences
 
-## Experimental approach
+## Experimental approach 1/
 
+* Data source: ECHILD research database
+* Co-produced with Teenage Cancer Trust Youth Advisory group
+    * Variable selection
+    * Interpretation of results
+    * Dissemination
 
+## Experimental approach 2/
+
+* Population:
+    1. all children enrolled in state-funded schools in England at any time in the period 2014 to 2022
+        1. 5+ years school attendance records preceding KS2/4 outcome
+        2. a birth record and complete school attendance record
+    2. Siblings cohort: Use the subgroup of 1.2, those with an identified siblings (sharing the same biological mother)
+* Exposure: 
+    1. Diagnosis of any cancer prior to KS2/4 outcome
+    2. Prior to KS2/4 outcome, having a child sibling (0-16years) diagnosed with any cancer 
+
+## Experimental approach 3/
+
+* Comparison:
+    1. Peers (defined as those with similar baseline characteristics, such as cohort, age, 
+    gender, ethnicity and small geography based deprivation) with no previous diagnosis of cancer
+    2. Peers with no previous diagnosis of cancer, and with a child or adolescent (aged 0-16years) 
+    sibling (sharing the same mother) with no previous diagnosis of cancer.
+
+## Experimental approach 4/
+
+* Outcomes: 
+    * Meeting the expected standard in Key Stage (KS) 2 reading, writing and maths (binary) 
+    * Number of KS4 [GCSE] passes at grade A* to C (count) 
+    * Receipt of special educational needs and disabilities support (binary) - repeated for all years for which data are available 
+    * Number of days absent (count) - repeated for all years for which data are available 
+    * Post-16 outcomes such as:
+        * continuing education into KS5
+        * total points achieved from best three results at KS5 [A-level]. 
+
+## Experimental approach 5/
+
+* Prognostic variables prospectively identified by review of literature (previous studies: age, gender, FSM, SEND, EAL). 
+* DAG representations of causal relationships to inform the development of regression models. 
+* crude outcomes for both exposure groups
+* doubly robust methods to adjust for (measured) baseline confounders (augmented inverse propensity weighted estimators)
+
+::: {.notes}
+This combines a regression adjustment (RA) model (i.e., a regression model conditional on suitable covariates) 
+with inverse propensity weighting (IPW) to obtain an unbiased exposure effect estimator provided either or both 
+the RA and IPW models are correctly specified​.
+
+For Outcomes 1 (KS2 expected standard met), the RA model 
+will be a binary logistic model yielding an odds ratio describing the association of the outcome and exposure. 
+For Outcome 2 (KS4 count of A*-C passes), the RA model will likely be a negative binomial model yielding an 
+incident rate ratio describing the association of the outcome and exposure.
+
+Due to the repeated measurements in Outcomes 3 & 4 (repeated each year for which data are available per pupil), 
+I will use doubly robust Generalised Estimating Equation (GEE) methods to allow for the within-pupil correlation 
+
+For the sub-cohorts for which both KS2 and KS4 outcomes are present, I will investigate fitting models 
+estimating Outcome 2 (KS4 attainment) conditional on KS2 outcome, in addition to identified covariates. 
+
+RQ3: I will use generalised linear mixed (multi-level) models to investigate how much of the variation in outcomes 
+(for Outcome 1 & 2, KS2/4 attainment) between exposure groups is explained by observations being clustered within 
+schools and the school-level characteristics. It is the likely the data will be relatively sparse (few pupils per school) 
+for this analysis, if so, Bayesian mixed modelling approaches will be investigated. 
+:::
 
 ## Fit with call
 
