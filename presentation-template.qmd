@@ -21,7 +21,7 @@ format:
 * Funder: ADR UK / ESRC
 * Duration / Cost: 18 month (70% 15months; 40% 3months) / ~£160k (max £175k) @ fEC (80% funded)
 
-## Background 1/3
+## Background 1/2
 
 * 1,600 children (under-15years) diagnosed with cancer each year in England.
 * Survivors likely to have experienced disruption to their normal activities (e.g. school)
@@ -31,25 +31,22 @@ format:
     * lifetime earnings
     * self-perceived subjective social position
 
-## Background 2/3
+## Background 2/2
 
 * Survivors of childhood cancer face barriers to academic learning:
     * absence from school
     * physical and cognitive effects
     * psychosocial effects
-
-## Background 3/3
-
 * JLA priority: Effective interventions to support those returning to education
 * NAO called for investigation into substantial unexplained local variation in the provision of support for SEND
 
 ## Study Aims
 
-* Quantify impact of childhood cancer on academic attainment of survivors
-* Quantify impact of childhood cancer on academic attainment of siblings
-* Identify school-level characteristics associated with reduced attainment differences
+1. Quantify impact of childhood cancer on academic attainment of survivors
+1. Quantify impact of childhood cancer on academic attainment of siblings
+1. Identify school-level characteristics associated with reduced attainment differences
 
-## Experimental approach 1/
+## Experimental approach 1/6
 
 * Data source: ECHILD research database
 * Co-produced with Teenage Cancer Trust Youth Advisory group
@@ -57,18 +54,21 @@ format:
     * Interpretation of results
     * Dissemination
 
-## Experimental approach 2/
+## Experimental approach 2/6
 
 * Population:
     1. all children enrolled in state-funded schools in England at any time in the period 2014 to 2022
         1. 5+ years school attendance records preceding KS2/4 outcome
         2. a birth record and complete school attendance record
     2. Siblings cohort: Use the subgroup of 1.2, those with an identified siblings (sharing the same biological mother)
+
+## Experimental approach 3/6
+
 * Exposure: 
     1. Diagnosis of any cancer prior to KS2/4 outcome
     2. Prior to KS2/4 outcome, having a child sibling (0-16years) diagnosed with any cancer 
 
-## Experimental approach 3/
+## Experimental approach 4/6
 
 * Comparison:
     1. Peers (defined as those with similar baseline characteristics, such as cohort, age, 
@@ -76,7 +76,7 @@ format:
     2. Peers with no previous diagnosis of cancer, and with a child or adolescent (aged 0-16years) 
     sibling (sharing the same mother) with no previous diagnosis of cancer.
 
-## Experimental approach 4/
+## Experimental approach 5/6 {.smaller}
 
 * Outcomes: 
     * Meeting the expected standard in Key Stage (KS) 2 reading, writing and maths (binary) 
@@ -87,7 +87,7 @@ format:
         * continuing education into KS5
         * total points achieved from best three results at KS5 [A-level]. 
 
-## Experimental approach 5/
+## Experimental approach 6/6
 
 * Prognostic variables prospectively identified by review of literature (previous studies: age, gender, FSM, SEND, EAL). 
 * DAG representations of causal relationships to inform the development of regression models. 
@@ -116,7 +116,7 @@ schools and the school-level characteristics. It is the likely the data will be 
 for this analysis, if so, Bayesian mixed modelling approaches will be investigated. 
 :::
 
-## Fit with call
+## Fit with call {.smaller}
 
 * useful research (deriving insights from a ADR UK sponsored dataset, showcase the potential for policy impact and public benefit) ✔️
 * useful data (develop the data as a useful research resource for future users) ✔️
